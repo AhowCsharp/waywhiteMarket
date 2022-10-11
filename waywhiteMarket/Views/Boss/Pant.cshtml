@@ -1,0 +1,33 @@
+﻿@model IEnumerable<waywhiteMarket.Models.TProduct>
+@using waywhiteMarket.Models;
+@inject ProductDbContext _context;
+@{
+    var productList = _context.TProducts.Where(p => p.FType == "Pant").OrderByDescending(P => P.FPrice).ToList();
+    //    "~/images/針織衫.jfif"
+
+}
+@{
+    ViewData["Title"] = "All";
+    Layout = "~/Views/Shared/_BossStyle.cshtml";
+}
+<div style="margin:5%">
+<div class="row">
+        @foreach (var item in productList)
+        {
+                <div class="col-12 col-md-4 mb-2">
+                    <div class="card" style="width:100%;margin:2.5%">
+                      <img src="~/product/@item.FPath.ToString().Replace("D:\\C#作品集\\waywhiteMarket\\waywhiteMarket\\wwwroot\\product","")" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">@item.FName</h5>
+                        <p class="card-text">
+                            @item.FDescription  
+                            <br>
+                            @item.FPrice
+                        </p>
+                            <a href="#" class="btn btn-outline-dark">Add to Shopping Cart</a>
+                      </div>
+                    </div>
+                </div>
+        }
+</div>
+</div>

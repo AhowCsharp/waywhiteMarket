@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+@using waywhiteMarket.Models;
+@model waywhiteMarket.Models.TMember;
+
+@inject ProductDbContext _context;
+@{
+    var productTable = _context.TProducts.ToList();
+}
+
+
+    <html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="~/lib/css/slider.css" rel="stylesheet" />     
+    <title>@ViewBag.Title</title>
+    <style>
+     .foot {
+
+       position: fixed !important;
+
+       bottom: 0px;
+
+       position: absolute;
+
+       width:100%;
+
+    }
+    body{
+        margin-bottom:10%;       
+    }
+    .d-flex{
+        display:flex;
+    }
+    .img-wrap > img{
+        width:100%;
+    }
+    .flex-wrap{
+        flex-wrap:wrap;
+    }
+    .col-25{
+        width:100%;
+        padding:15px;
+    }
+
+    @@media screen and ( min-width:576px ){
+        .col-25{
+            width:50%;
+        }
+    }
+    @@media screen and ( min-width:992px ){
+        .col-25{
+            width:33.33333%;
+        }
+    }
+    @@media screen and ( min-width:1680px ){
+        .col-25{
+            width:25%;
+        }
+    }
+    .form-group{
+        margin:15px;
+    }
+    .form-control{
+        width:100%;
+    }
+    .control-label{
+        margin:5px;
+    }
+
+    </style>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://localhost:7113/">WayWhite</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://localhost:7113/Boss/Inventory">Inventory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://localhost:7113/Boss/Member">Member Manage</a>
+            </li>
+         
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                All
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="https://localhost:7113/Boss/Top">Top</a></li>
+                <li><a class="dropdown-item" href="https://localhost:7113/Boss/Pant">Pant</a></li>
+                <li><a class="dropdown-item" href="https://localhost:7113/Boss/Coat">Coat</a></li>
+                <li><a class="dropdown-item" href="https://localhost:7113/Boss/All">All</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://localhost:7113/Home/Logout">Logout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hello,@User.Identity.Name</a>
+            </li>
+          </ul>
+        </div>
+      </div>    
+    </nav>
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+
+    <footer class="bg-light text-center text-lg-start foot">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:Ahow Design
+       
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+<script src="~/wwwroot/lib/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+<script src="~/lib/js/slider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script>
+    var pic1 = document.getElementById("picOne");
+    var pic2 = document.getElementById("picTwo");
+    var pic3 = document.getElementById("picThree");
+    var pic4 = document.getElementById("picFour");
+    pic1.addEventListener("mouseover",function(){
+        this.style.opacity=0.6;
+    })
+    pic1.addEventListener("mouseout",function(){
+        this.style.opacity=1;
+    })
+    pic2.addEventListener("mouseover",function(){
+        this.style.opacity=0.6;
+    })
+    pic2.addEventListener("mouseout",function(){
+        this.style.opacity=1;
+    })
+    pic3.addEventListener("mouseover",function(){
+        this.style.opacity=0.6;
+    })
+    pic3.addEventListener("mouseout",function(){
+        this.style.opacity=1;
+    })
+    pic4.addEventListener("mouseover",function(){
+        this.style.opacity=0.6;
+    })
+    pic4.addEventListener("mouseout",function(){
+        this.style.opacity=1;
+    })
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

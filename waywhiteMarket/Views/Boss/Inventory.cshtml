@@ -1,0 +1,83 @@
+﻿@model IEnumerable<waywhiteMarket.Models.TProduct>
+@using waywhiteMarket.Models;
+@inject ProductDbContext _context;
+@{
+    var productList = _context.TProducts.ToList();
+}
+@{
+    ViewData["Title"] = "Inventory";
+    Layout = "~/Views/Shared/_BossStyle.cshtml";
+}
+
+<div style="width:80%;margin-left:10%;margin-top:5%">
+<table class="table table-dark table-striped table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FPrice)
+            </th>
+@*            <th>
+                @Html.DisplayNameFor(model => model.FPath)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.FDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FOwner)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FDay)
+            </th>
+            <th>
+                Manage
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (var item in productList)
+            {
+        <tr>
+            <td>
+                @item.FName
+                @*@Html.DisplayFor(modelItem => item.FName)*@
+            </td>
+            <td>
+                 @item.FPrice
+                @*@Html.DisplayFor(modelItem => item.FPrice)*@
+            </td>
+           @*<td>
+                
+                @Html.DisplayFor(modelItem => item.FPath)
+            </td>*@
+            <td>
+                @item.FDescription
+                @*@Html.DisplayFor(modelItem => item.FDescription)*@
+            </td>
+            <td>
+                @item.FType
+                @*@Html.DisplayFor(modelItem => item.FType)*@
+            </td>
+            <td>
+                @item.FOwner
+                @*@Html.DisplayFor(modelItem => item.FOwner)*@
+            </td>
+            <td>
+                @item.FDay
+                @*@Html.DisplayFor(modelItem => item.FDay)*@
+            </td>
+            <td>
+                <a asp-action="Delete" type="button" asp-route-id="@item.FName" class="btn btn-outline-success">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
+<a href="https://localhost:7113/Boss/ProductUpLoad" type="button" class="btn btn-outline-dark" style="margin-left:45%">UpLoadNew</a>
+

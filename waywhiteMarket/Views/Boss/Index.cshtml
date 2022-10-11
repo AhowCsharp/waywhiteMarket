@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_BossStyle.cshtml";
+}
+
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="~/images/超大夾克.jfif"  style="width:100%">
+    <div class="text">文本 1</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="~/images/毛衣.jfif"  style="width:100%">
+    <div class="text">文本 2</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="~/images/夾克.jfif"  style="width:100%">
+    <div class="text">文本 3</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+@*<div class="container">
+    <div class="row">
+        <div class="col-4" >         
+             <img src="~/images/帽t.jfif" id="picOne" >         
+        </div>
+        <div class="col-4 ">
+            <img src="~/images/短t.jfif" id="picTwo" >
+        </div>
+        <div class="col-4 ">
+            <img src="~/images/捷克.jfif" id="picThree" >
+        </div>
+    </div>
+</div>*@
+<div class="d-flex flex-wrap" style="margin-top:5%">
+   <div class="col-25">
+       <div class="img-wrap"><img src="~/images/帽t.jfif" id="picOne" ></div>
+
+   </div>
+   <div class="col-25">
+       <div class="img-wrap"><img src="~/images/短t.jfif" id="picTwo" ></div>
+
+   </div>
+   <div class="col-25">
+       <div class="img-wrap"> <img src="~/images/捷克.jfif" id="picThree" ></div>
+
+   </div>
+   <div class="col-25">
+       <div class="img-wrap"><img src="~/images/大學T.jfif" id="picFour" ></div>
+
+   </div>
+</div>

@@ -1,0 +1,53 @@
+﻿@model waywhiteMarket.Models.TProduct
+@using waywhiteMarket.Models;
+@inject ProductDbContext _context;
+
+@{
+    ViewData["Title"] = "ProductUpLoad";
+    Layout = "~/Views/Shared/_BossStyle.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ProductUpLoad" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FName" class="control-label"></label>
+                <input asp-for="FName" class="form-control" />
+                <span asp-validation-for="FName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FPrice" class="control-label"></label>
+                <input asp-for="FPrice" class="form-control" />
+                <span asp-validation-for="FPrice" class="text-danger"></span>
+            </div>         
+            <div class="form-group">
+                <label asp-for="FDescription" class="control-label"></label>
+                <textarea asp-for="FDescription" class="form-control"></textarea>               
+            </div>
+            <div class="form-group">
+                <label asp-for="FType" class="control-label"></label>
+                <select asp-for="FType" class="form-select">
+                    <option>Top</option>
+                    <option>Pant</option>
+                    <option>Coat</option>
+                </select>
+            </div>
+             <div class="form-group">
+                <label class="control-label"></label>
+                <input type="file" name="formFile" class="form-control" />
+                
+            </div>
+            <div class="form-group">
+                <input type="submit" value="UpdateNewProduct" class="btn btn-outline-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@*@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+*@

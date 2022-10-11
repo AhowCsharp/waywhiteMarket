@@ -1,0 +1,56 @@
+﻿@model waywhiteMarket.Models.TMember
+
+@{
+    ViewData["Title"] = "SignUp";
+}
+
+
+<div class="container">
+
+<div class="row">
+    <div class="col-6" style="margin-left:25%;margin-top:7%">
+        <form asp-action="SignUp">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FName" class="control-label"></label>
+                <input asp-for="FName" class="form-control" />
+                <span asp-validation-for="FName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FAccount" class="control-label"></label>
+                <input asp-for="FAccount" class="form-control" />
+                <span asp-validation-for="FAccount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FPassword" class="control-label"></label>
+                <input asp-for="FPassword" class="form-control" />
+                <span asp-validation-for="FPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FMail" class="control-label"></label>
+                <input asp-for="FMail" class="form-control" />
+                <span asp-validation-for="FMail" class="text-danger"></span>
+            </div> 
+            <div class="form-group">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox"  id="flexSwitchCheckDefault">
+                  <label class="form-check-label" for="flexSwitchCheckDefault">已閱讀過條款 並確認要註冊</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+<span class="text-danger">
+    @ViewBag.ErrorMessage
+</span>
+@*
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+*@

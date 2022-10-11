@@ -1,0 +1,56 @@
+﻿@model IEnumerable<waywhiteMarket.Models.TProduct>
+@using waywhiteMarket.Models;
+@inject ProductDbContext _context;
+@{
+    var productList = _context.TProducts.ToList();
+    //    "~/images/針織衫.jfif"
+
+}
+@{
+    ViewData["Title"] = "Cart";
+    Layout = "~/Views/Shared/_MemberStyle.cshtml";
+}
+<style>
+    .Cart{
+
+    }
+</style>
+<div style="margin:5%">
+<div class="row">
+        @foreach (var item in productList)
+        {
+            <div class="col-12 col-md-4 mb-2">
+                <div class="card" style="width:100%;margin:2.5%">
+                  <img src="~/product/@item.FPath.ToString().Replace("D:\\C#作品集\\waywhiteMarket\\waywhiteMarket\\wwwroot\\product","")" class="card-img-top" >
+                  <div class="card-body">
+                    <h5 class="card-title">@item.FName</h5>
+                    <p class="card-text">
+                            @item.FDescription
+                            <br>
+                            <span>NT:@item.FPrice</span>
+                    </p>
+                        <button class="btn btn-outline-dark Cart" value="@item.FName">Add to Shopping Cart</button>
+                  </div>
+                </div>
+            </div>
+        }
+</div>
+</div>
+
+<script>
+    var storage = localStorage;
+    //window.addEventListener("load",function(){
+    //   storage["cart"]="";
+    //})
+    
+    var a = document.getElementsByClassName("Cart");
+    storage.setItem("amount",a.length.toString());
+    for(let i =0;i<a.length;i++){
+
+        a[i].addEventListener("click",function(e){
+        //storage["cart"] +=  `${e.target.value},`;
+        storage.setItem(i.toString(),e.target.value);
+    });
+    }
+  
+</script>

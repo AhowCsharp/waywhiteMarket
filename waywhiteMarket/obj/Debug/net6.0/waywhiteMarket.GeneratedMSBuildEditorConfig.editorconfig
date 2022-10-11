@@ -1,0 +1,136 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = waywhiteMarket
+build_property.RootNamespace = waywhiteMarket
+build_property.ProjectDir = D:\C#作品集\waywhiteMarket\waywhiteMarket\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\C#作品集\waywhiteMarket\waywhiteMarket
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Boss/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9zc1xBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Boss/Coat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9zc1xDb2F0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Boss/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9zc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Boss/Inventory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9zc1xJbnZlbnRvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Boss/Member.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9zc1xNZW1iZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Boss/Pant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9zc1xQYW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Boss/ProductUpLoad.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9zc1xQcm9kdWN0VXBMb2FkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Boss/Top.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9zc1xUb3AuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Home/about.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Home/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Home/Coat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb2F0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Home/Pant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Home/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Home/Top.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUb3AuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Member/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEFib3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Member/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Member/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXENhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Member/Coat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXENvYXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Member/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Member/Pant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXFBhbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Member/Top.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXFRvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Shared/_BossStyle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Cb3NzU3R5bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Shared/_MainStyle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWluU3R5bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Shared/_MemberStyle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZW1iZXJTdHlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Shared/_ProductPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9kdWN0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#作品集/waywhiteMarket/waywhiteMarket/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
